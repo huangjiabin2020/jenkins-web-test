@@ -14,7 +14,6 @@ public class StartController {
     @Autowired
     private RedisTemplate<String,Object> template;
 
-
     @GetMapping("/")
     public ResponseEntity test(){
         Object ok = template.opsForValue().get("ok");
